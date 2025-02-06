@@ -125,7 +125,7 @@ function showCelebration() {
   teddyImage.className = 'w-48 h-48 mx-auto';
   messageText.textContent = 'Yayyyy! 🥳';
   personalMessage.textContent = 'Happy Valentine\'s Day, Mamita! ❤️';
-  personalMessage.className = 'text-center mx-auto text-2xl italic text-white font-bold mt-4';
+  personalMessage.className = 'text-center mx-auto text-sm sm:text-xl md:text-2xl italic text-white font-bold mt-4';
 
   // clear container and append celebration content
   container.innerHTML = '';
