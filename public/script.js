@@ -32,6 +32,7 @@ let currentStep = 0; // tracks the current step in the messages/images sequence
 // DOM elements
 const teddyImage = document.createElement('img'); // image element for the teddy bear
 const messageText = document.createElement('p'); // paragraph element for the message
+const personalMessage = document.createElement('p'); // paragraph element for the personal message
 const nextButton = document.getElementById('next-btn'); // button element for the "next" button
 const backButton = document.getElementById('back-btn'); // button element for the "back" button
 const container = document.querySelector('div'); // div element to hold the image and message
@@ -123,11 +124,14 @@ function showCelebration() {
   teddyImage.src = images[9];
   teddyImage.className = 'w-48 h-48 mx-auto';
   messageText.textContent = 'Yayyyy! 🥳';
+  personalMessage.textContent = 'Happy Valentine\'s Day, Mamita! ❤️';
+  personalMessage.className = 'text-center mx-auto text-2xl italic text-white font-bold mt-4';
 
   // clear container and append celebration content
   container.innerHTML = '';
   container.appendChild(teddyImage);
   container.appendChild(messageText);
+  container.appendChild(personalMessage);
 
   // confetti effect
   let duration = 15 * 1000; // 15 seconds
